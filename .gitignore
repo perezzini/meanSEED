@@ -1,0 +1,9 @@
+.idea
+.env
+node_modules
+client/node_modules
+client/bower_components
+npm-debug.*
+link-checker-results.txt
+client/app/**/*.js
+*.js.map

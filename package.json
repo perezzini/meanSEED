@@ -1,0 +1,24 @@
+{
+  "name": "mean-seed",
+  "version": "0.0.0",
+  "description": "Quickstart seed for implementing a MEAN project",
+  "private": true,
+  "scripts": {
+    "start-server": "node -r dotenv/config ./bin/www",
+    "start-client": "cd client/ && npm start",
+    "start": "concurrently --kill-others \"npm run start-server\" \"npm run start-client\""
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "concurrently": "^3.1.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "dotenv": "^2.0.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "mongoose": "^4.7.6",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "author": "Luciano Perezzini"
+}
