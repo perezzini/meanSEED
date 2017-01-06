@@ -24,7 +24,7 @@ Now, it's time to download and install MongoDB. [Here](https://docs.mongodb.com/
 # Clone meanSEED
 In order to begin to use and explore meenSEED, clone it:
 ```
-git clone https://github.com/perezzini/meenSEED.git meenSEED
+git clone https://github.com/perezzini/meenSEED.git
 ```
 
 # Software Structure
@@ -39,15 +39,15 @@ The `models/` folder is considered part of the server-side structure. Here you'l
 We can consider the `views/` folder as part of the server-side structure too: It contains the files (EJS files, in this opportunity) which, let's say, explain how to render information the files in `routes/` contain. The `index.ejs` file in the `views/` folder requires stylesheets and Angular config files to use Angular components. The "root" component in meedSEED is `my-app`.
 
 ## Client-side
-Here, all of our client-side logic is inside the `client/` folder. Here, the `app/` folder is where all the "Angular 2 stuff" happens. I've found appropriate to divide this folder into `components/` (other components that the "root" component -- the `app.component.ts`) and `services/` (here, `task.service.ts` is just a Angular service template).
+Here, all of our client-side logic is inside the `client/` folder: The `app/` folder is where all the Angular 2 "stuff happens". I've found appropriate to divide this folder into `components/` (other components that the "root" component -- the `app.component.ts`) and `services/` (here, `task.service.ts` is just a Angular service template).
 
 Remember:
-> TypeScript is a super set of JavaScript. Angular finds convinient to write TypeScript code. So, when we start the client-side app, TypeScript code must be compiled into JavaScript code for "browser rendering" using `tsc`.
+> TypeScript is a super set of JavaScript. Angular finds convinient to write TypeScript code. So, when we start the client-side app, TypeScript code must be compiled into JavaScript code for "browser rendering" using `tsc`. Don't worry, meanSEED does this automatically when starting it.
 
 # Set-Up
-meenSEED uses environmental variables to configure, basically, database and server port.
+meenSEED uses environmental variables to configure, basically, the database and server port.
 
-Once cloned GIT repository, at the root folder, add a .env file with the following keys (add correspondent values of your choice, like `PORT=3000`):
+Once cloned git repository, at the root folder, add a `.env` file with the following keys (add correspondent values of your choice, like `PORT=3000`):
 ```
 PORT
 
@@ -55,7 +55,7 @@ DB_HOST
 DB_NAME
 ```
 
-Node will automatically preload environmental variables at start.
+Node will automatically preload environmental variables at start, using [dontenv](https://www.npmjs.com/package/dotenv) library.
 
 # Installation
 Notice
@@ -65,20 +65,29 @@ At the root folder, execute
 ```
 npm install
 ```
-This will install dependencies (like Express.js, Mongoose.js, and more) declared in the `package.json` file at the root folder.
+This will install dependencies (like Express.js, Mongoose.js, and more) declared in the `package.json`.
 
 meanSEED uses [Bootstrap](http://getbootstrap.com/) to enhance front-end UI. To set it up we will use [Bower](https://bower.io/), a front-end package manager. To install Bower globally:
 ```
-sudo npm install bower --save
+sudo npm install bower
 ```
 Now, redirect to the project's root folder and install Bootstrap using Bower
 ```
 sudo bower install bootstrap --save
 ```
-The above command will locate a file called `.bowerrc` at the project's root folder to get the directory where to place module (in this case, `client/bower_components/`).
+The above command will locate a file called `.bowerrc` at the project's root folder to get the directory where to place modules (in this case, `client/bower_components/`).
 
-That's it!. Now, let's start server and client running, at the root folder:
+# Start meanSEED
+To start server and client processes, at the root folder, execute:
 ```
 npm start
 ```
-`npm start` will automatically run server and client modules, in parallel. When adding new server-side features, restart and then `npm start` again from the command line. 
+`npm start` will automatically run server and client modules, in parallel. When adding new server-side features, restart and then `npm start` again from the command line.
+
+Now, open `localhost:PORT` (where `PORT` is the env variable defined lately) within your browser and should be able to see something like this
+![meanSEED index page](http://imgur.com/mwSPaJF)
+
+# Feedback
+Please, feel free to distribute this set-up project as well as bring new ideas and features!
+
+Remember, this is just a *quickstart* seed for implementing a MEAN project.
