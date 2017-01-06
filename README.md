@@ -82,7 +82,7 @@ To start server and client processes, at the root folder, execute:
 ```
 npm start
 ```
-`npm start` will automatically run server and client modules, in parallel. When adding new server-side features, restart and then `npm start` again from the command line.
+`npm start` will automatically run server and client modules in parallel, using [concurrently](https://www.npmjs.com/package/concurrently). When adding new server-side features, restart and then `npm start` again from the command line.
 
 Now, open `localhost:PORT` (where `PORT` is the env variable defined lately) within your browser and should be able to see something like this:
 <br>
