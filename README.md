@@ -24,7 +24,7 @@ Now, it's time to download and install MongoDB. [Here](https://docs.mongodb.com/
 # Clone meanSEED
 In order to begin to use and explore meenSEED, clone it:
 ```
-git clone https://github.com/perezzini/meenSEED.git
+git clone https://github.com/perezzini/meanSEED.git
 ```
 
 # Software Structure
@@ -78,7 +78,7 @@ sudo npm install bower -g
 ```
 Now, redirect to the project's root folder and install Bootstrap using Bower
 ```
-sudo bower install bootstrap --save
+bower install bootstrap --save
 ```
 The above command will locate a file called `.bowerrc` at the project's root folder to get the directory where to place modules (in this case, `client/bower_components/`).
 
