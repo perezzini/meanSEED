@@ -52,6 +52,7 @@ Once cloned git repository, at the root folder, add a `.env` file with the follo
 PORT
 
 DB_HOST
+DB_PORT
 DB_NAME
 ```
 
@@ -63,13 +64,17 @@ Notice
 
 At the root folder, execute
 ```
-npm install
+sudo npm install
 ```
 This will install dependencies (like Express.js, Mongoose.js, and more) declared in the `package.json`.
 
+Then, to install client dependencies -- Angular dependencies --, execute the following command at the `client/` folder:
+```
+sudo npm install
+```
 meanSEED uses [Bootstrap](http://getbootstrap.com/) to enhance front-end UI. To set it up we will use [Bower](https://bower.io/), a front-end package manager. To install Bower globally:
 ```
-sudo npm install bower
+sudo npm install bower -g
 ```
 Now, redirect to the project's root folder and install Bootstrap using Bower
 ```
