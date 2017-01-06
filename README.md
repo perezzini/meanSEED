@@ -85,7 +85,7 @@ npm start
 `npm start` will automatically run server and client modules, in parallel. When adding new server-side features, restart and then `npm start` again from the command line.
 
 Now, open `localhost:PORT` (where `PORT` is the env variable defined lately) within your browser and should be able to see something like this
-![meanSEED index page](http://imgur.com/mwSPaJF)
+![meanSEED index page](http://i.imgur.com/mwSPaJF.png)
 
 # Feedback
 Please, feel free to distribute this set-up project as well as bring new ideas and features!
