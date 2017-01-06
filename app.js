@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 // init Mongoose schemas & init db through Mongoose
-require('./models/thing')
+require('./models/thing');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://' + 
 				process.env.DB_HOST + 
@@ -21,7 +21,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-// added from tutorial
+// better check out this...
 app.engine('html', require('ejs').renderFile);
 
 // uncomment after placing your favicon in /public
