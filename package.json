@@ -4,7 +4,7 @@
   "description": "Quickstart seed for implementing a MEAN project",
   "private": true,
   "scripts": {
-    "start-server": "nodemon -r dotenv/config ./bin/www",
+    "start-server": "node -r dotenv/config ./bin/www",
     "start-client": "cd client/ && npm start",
     "start": "concurrently --kill-others \"npm run start-server\" \"npm run start-client\""
   },
