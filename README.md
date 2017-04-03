@@ -5,7 +5,7 @@ A minimal client/server set-up for a MEAN project.
 MEAN stands for:
 - (M) [MongoDB](https://www.mongodb.com): A NoSQL database implementation.
 - (E) [Express.js](https://www.expressjs.com): A fast, unopinionated, minimalist web framework for Node.js. We use Express.js to set-up a minimal server application.
-- (A) [Angular](https://www.angular.io): A framework to develop mobile and desktop apps using code reusability. In particular, meenSEED uses version 2 of Angular.
+- (A) [Angular](https://www.angular.io): A framework to develop mobile and desktop apps using code reusability. In particular, meanSEED uses version 2 of Angular.
 - (N) [Node.js](https://www.nodejs.org): A JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 MEAN is a stack of components, all of them written in JavaScript. So, we can write server-side and client-side applications in just one language.
